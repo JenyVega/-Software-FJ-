@@ -4,7 +4,6 @@ from abc import ABC, abstractmethod
 
 from excepciones import ClienteInvalidoError, ParametroFaltanteError
 
-
 class EntidadBase(ABC):
     """Abstracción de cualquier entidad del sistema (cliente, servicio, reserva)."""
 
@@ -23,7 +22,6 @@ class EntidadBase(ABC):
 
     def __str__(self):
         return self.describir()
-
 
 class Cliente(EntidadBase):
     """Cliente con datos personales encapsulados y validaciones estrictas."""
